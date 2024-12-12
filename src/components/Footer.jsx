@@ -83,6 +83,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-gray-400">Indore(M.P), India</li>
               <li className="text-gray-400">samyakkala@gmail.com</li>
+              <li className="text-gray-400">+91 (XXX) 56-890 </li>
             </ul>
           </div>
         </div>
