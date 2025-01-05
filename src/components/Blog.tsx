@@ -1,28 +1,35 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const Blog = () => {
   const posts = [
     {
-      title: 'The Future of Web Development',
-      excerpt: 'Exploring upcoming trends and technologies that will shape the future of web development.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80',
-      date: 'Mar 15, 2024',
-      readTime: '5 min read',
+      title: "Traffic Signs Recognition: CNN",
+      excerpt:
+        "Exploring upcoming trends and technologies that will shape the future of web development.",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7XdsUAH4aCs_xiF6NEXLsA.png",
+      date: "Mar 15, 2024",
+      readTime: "5 min read",
     },
     {
-      title: 'Mastering React Performance',
-      excerpt: 'Tips and tricks to optimize your React applications for better performance.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80',
-      date: 'Mar 10, 2024',
-      readTime: '7 min read',
+      title:
+        "Language Models are Unsupervised Multitask Learners React Performance",
+      excerpt:
+        "An insight on research paper “Language Models are Unsupervised Multitask Learners” by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever from OpenAI introduces groundbreaking insights into the capabilities of language models, specifically GPT-2",
+      image:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YpanoKK0olFZxfLMby6kaA.jpeg",
+      date: "Mar 10, 2024",
+      readTime: "7 min read",
     },
     {
-      title: 'UI/UX Design Principles',
-      excerpt: 'Essential design principles every developer should know for better user experience.',
-      image: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef?auto=format&fit=crop&q=80',
-      date: 'Mar 5, 2024',
-      readTime: '6 min read',
+      title: "Non-Linear Regression Analysis",
+      excerpt:
+        "Essential design principles every developer should know for better user experience.",
+      image:
+        "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*hccTducJo17wcYBGazQwag.jpeg",
+      date: "Mar 5, 2024",
+      readTime: "6 min read",
     },
   ];
 
@@ -30,7 +37,9 @@ const Blog = () => {
     <section id="blog" className="py-24 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white mb-4">Latest Blog Posts</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Latest Blog Posts
+          </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Insights and articles about web development and design
           </p>
