@@ -12,7 +12,7 @@ const Blog = () => {
       date: "Mar 15, 2024",
       readTime: "5 min read",
 
-      link: "https://medium.com/swlh/traffic-signs-recognition-cnn-ebaa0d18f6ad?source=your_stories_page-------------------------------------",
+      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
     {
       title:
@@ -24,7 +24,7 @@ const Blog = () => {
       date: "Mar 10, 2024",
       readTime: "7 min read",
 
-      link: "https://medium.com/analytics-vidhya/language-models-are-unsupervised-multitask-learners-e82c5b671544?source=your_stories_page-------------------------------------",
+      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
     {
       title: "Non-Linear Regression Analysis",
@@ -35,7 +35,7 @@ const Blog = () => {
       date: "Mar 5, 2024",
       readTime: "6 min read",
 
-      link: "https://medium.com/analytics-vidhya/non-linear-regression-analysis-e150447ac1a3?source=your_stories_page-------------------------------------",
+      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
   ];
 
@@ -85,26 +85,17 @@ const Blog = () => {
         </div>
 
         <div className="text-center mt-12">
-         <a
-
-                  href={post.link}
-
-                  target="_blank"
-
-                  rel="noopener noreferrer"
-
-                  className="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition-colors group"
-
-                >
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div> 
-            </article>
-          ))}
+          <a
+            href="#"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors"
+          >
+            View All Posts
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
         </div>
+      </div>
     </section>
   );
 };
 
-export default React.memo(Blog);;
+export default Blog;
