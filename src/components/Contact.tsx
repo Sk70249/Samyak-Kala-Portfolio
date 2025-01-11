@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -15,7 +15,9 @@ const Contact = () => {
     console.log(formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -43,8 +45,11 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-indigo-400 mt-1" />
                   <div>
                     <p className="font-medium text-white">Email</p>
-                    <a href="mailto:contact@example.com" className="text-gray-300 hover:text-indigo-400">
-                      contact@example.com
+                    <a
+                      href="mailto:contact@example.com"
+                      className="text-gray-300 hover:text-indigo-400"
+                    >
+                      samyakkala@gmail.com
                     </a>
                   </div>
                 </div>
@@ -52,8 +57,11 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-indigo-400 mt-1" />
                   <div>
                     <p className="font-medium text-white">Phone</p>
-                    <a href="tel:+1234567890" className="text-gray-300 hover:text-indigo-400">
-                      +1 (234) 567-890
+                    <a
+                      href="tel:+1234567890"
+                      className="text-gray-300 hover:text-indigo-400"
+                    >
+                      +91 (XXX) 101-112
                     </a>
                   </div>
                 </div>
@@ -62,8 +70,8 @@ const Contact = () => {
                   <div>
                     <p className="font-medium text-white">Location</p>
                     <p className="text-gray-300">
-                      123 Developer Street<br />
-                      San Francisco, CA 94107
+                      Indore, MP - 452001
+                      <br />
                     </p>
                   </div>
                 </div>
@@ -72,10 +80,16 @@ const Contact = () => {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="bg-gray-800 rounded-lg shadow-lg p-8">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-gray-800 rounded-lg shadow-lg p-8"
+            >
               <div className="grid grid-cols-1 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Name
                   </label>
                   <input
@@ -89,7 +103,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Email
                   </label>
                   <input
@@ -103,7 +120,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Subject
                   </label>
                   <input
@@ -117,7 +137,10 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-1"
+                  >
                     Message
                   </label>
                   <textarea
