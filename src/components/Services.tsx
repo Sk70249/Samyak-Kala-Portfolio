@@ -1,43 +1,45 @@
-import React from 'react';
-import { Code, Palette, Globe, Zap, Database, Phone } from 'lucide-react';
+import React from "react";
+import { Code, Palette, Globe, Zap, Database, Phone } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: <Code className="h-8 w-8" />,
-      title: 'Web Development',
-      description: 'Custom websites and web applications built with modern technologies',
-      price: 'From $2,000',
+      title: "LWC/Web Development",
+      description:
+        "Custom websites and web applications built with modern technologies",
+      price: "From $2,000",
     },
     {
       icon: <Palette className="h-8 w-8" />,
-      title: 'UI/UX Design',
-      description: 'User-centered design solutions that enhance user experience',
-      price: 'From $1,500',
+      title: "UI/UX Design",
+      description:
+        "User-centered design solutions that enhance user experience",
+      price: "From $1,500",
     },
     {
       icon: <Globe className="h-8 w-8" />,
-      title: 'Digital Marketing',
-      description: 'SEO optimization and social media marketing strategies',
-      price: 'From $800/month',
+      title: "AI Agent",
+      description: "SEO optimization and social media marketing strategies",
+      price: "From $800/month",
     },
     {
       icon: <Database className="h-8 w-8" />,
-      title: 'Database Design',
-      description: 'Efficient and scalable database architecture solutions',
-      price: 'From $1,200',
+      title: "Data Analytics",
+      description: "Efficient and scalable database architecture solutions",
+      price: "From $1,200",
     },
     {
       icon: <Phone className="h-8 w-8" />,
-      title: 'Mobile Development',
-      description: 'Native and cross-platform mobile applications',
-      price: 'From $3,000',
+      title: "Mobile Development",
+      description: "Native and cross-platform mobile applications",
+      price: "From $2,000",
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: 'Performance Optimization',
-      description: 'Speed up your existing applications and websites',
-      price: 'From $500',
+      title: "Performance Optimization",
+      description: "Speed up your existing applications and websites",
+      price: "From $500",
     },
   ];
 

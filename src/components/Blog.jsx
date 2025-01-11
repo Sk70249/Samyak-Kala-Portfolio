@@ -85,7 +85,9 @@ const Blog = () => {
 
         <div className="text-center mt-12">
           <a
-            href="/blog"
+            href="https://medium.com/@samyakkala128"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors"
           >
             View All Posts
