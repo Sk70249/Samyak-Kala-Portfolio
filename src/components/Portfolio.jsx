@@ -31,7 +31,7 @@ const Portfolio = () => {
         "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800",
       description: "Personal portfolio website with modern design",
       demoUrl: "#",
-      githubUrl: "https://github.com/Sk70249",
+      githubUrl: "https://github.com/Sk70249/Samyak-Kala-Portfolio",
     },
   ];
 
