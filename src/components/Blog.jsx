@@ -11,7 +11,7 @@ const Blog = () => {
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7XdsUAH4aCs_xiF6NEXLsA.png",
       date: "Mar 15, 2024",
       readTime: "5 min read",
-      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
+      link: "https://medium.com/swlh/traffic-signs-recognition-cnn-ebaa0d18f6ad",
     },
     {
       title:
@@ -22,7 +22,7 @@ const Blog = () => {
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YpanoKK0olFZxfLMby6kaA.jpeg",
       date: "Mar 10, 2024",
       readTime: "7 min read",
-      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
+      link: "https://medium.com/analytics-vidhya/language-models-are-unsupervised-multitask-learners-e82c5b671544",
     },
     {
       title: "Non-Linear Regression Analysis",
@@ -32,7 +32,7 @@ const Blog = () => {
         "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*hccTducJo17wcYBGazQwag.jpeg",
       date: "Mar 5, 2024",
       readTime: "6 min read",
-      link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
+      link: "https://medium.com/analytics-vidhya/non-linear-regression-analysis-e150447ac1a3",
     },
   ];
 
