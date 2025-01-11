@@ -1,20 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Menu, X, Github, Linkedin, BookOpen } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
+import { smoothScroll, throttle } from '../utils/smoothScroll';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isDark } = useTheme();
 
+  const handleScroll = useCallback(throttle(() => {
+    setIsScrolled(window.scrollY > 0);
+  }, 100), []); // Throttle scroll events to every 100ms
+
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [handleScroll]);
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    smoothScroll(targetId);
+    setIsMenuOpen(false);
+  };
 
   const navItems = [
     { label: 'Home', href: '#home' },
@@ -26,7 +35,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
+    <header className={`fixed w-full z-50 transition-all duration-300 will-change-transform ${
       isScrolled 
         ? isDark 
           ? 'bg-gray-900/90 backdrop-blur-sm shadow-lg' 
@@ -36,7 +45,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <a href="#" className="font-signature text-2xl text-indigo-600 hover:text-indigo-500 transition-colors">
+            <a 
+              href="#home" 
+              onClick={(e) => handleNavClick(e, '#home')}
+              className="font-signature text-2xl italic text-indigo-600 hover:text-indigo-500 transition-colors"
+            >
               Samyak Kala
             </a>
           </div>
@@ -46,6 +59,7 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className={`transition-colors ${
                   isDark 
                     ? 'text-gray-300 hover:text-indigo-400' 
@@ -69,7 +83,7 @@ const Header = () => {
                   : 'text-gray-600 hover:text-indigo-600'
               }`}
             >
-              <Github size={20} />
+              <Github className="w-5 h-5" />
             </a>
             <a 
               href="https://www.linkedin.com/in/samyak-kala-933a77169/" 
@@ -81,7 +95,7 @@ const Header = () => {
                   : 'text-gray-600 hover:text-indigo-600'
               }`}
             >
-              <Linkedin size={20} />
+              <Linkedin className="w-5 h-5" />
             </a>
             <a 
               href="https://www.kaggle.com/samyakkala" 
@@ -93,7 +107,7 @@ const Header = () => {
                   : 'text-gray-600 hover:text-indigo-600'
               }`}
             >
-              <BookOpen size={20} />
+              <BookOpen className="w-5 h-5" />
             </a>
           </div>
 
@@ -102,8 +116,9 @@ const Header = () => {
             className={`md:hidden transition-colors ${
               isDark ? 'text-gray-400' : 'text-gray-600'
             }`}
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
@@ -114,12 +129,12 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
                     isDark 
                       ? 'text-gray-300 hover:text-indigo-400 hover:bg-gray-800' 
                       : 'text-gray-600 hover:text-indigo-600 hover:bg-gray-50'
                   }`}
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>
@@ -132,4 +147,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);
