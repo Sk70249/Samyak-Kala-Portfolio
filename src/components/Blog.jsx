@@ -11,19 +11,17 @@ const Blog = () => {
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7XdsUAH4aCs_xiF6NEXLsA.png",
       date: "Mar 15, 2024",
       readTime: "5 min read",
-
       link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
     {
       title:
         "Language Models are Unsupervised Multitask Learners React Performance",
       excerpt:
-        "An insight on research paper “Language Models are Unsupervised Multitask Learners” by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever from OpenAI introduces groundbreaking insights into the capabilities of language models, specifically GPT-2",
+        "An insight on research paper “Language Models are Unsupervised Multitask Learners” by Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever from OpenAI introduces groundbreaking insights into the capabilities of language models, specifically GPT-2.",
       image:
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YpanoKK0olFZxfLMby6kaA.jpeg",
       date: "Mar 10, 2024",
       readTime: "7 min read",
-
       link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
     {
@@ -34,7 +32,6 @@ const Blog = () => {
         "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*hccTducJo17wcYBGazQwag.jpeg",
       date: "Mar 5, 2024",
       readTime: "6 min read",
-
       link: "https://github.com/Sk70249/Wind-Energy-Analysis-and-Forecast-using-Deep-Learning-LSTM",
     },
   ];
@@ -73,7 +70,9 @@ const Blog = () => {
                 </h3>
                 <p className="text-gray-300 mb-4">{post.excerpt}</p>
                 <a
-                  href="#"
+                  href={post.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-indigo-400 hover:text-indigo-300"
                 >
                   Read More
@@ -86,7 +85,7 @@ const Blog = () => {
 
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="/blog"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors"
           >
             View All Posts
