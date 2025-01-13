@@ -14,7 +14,7 @@ const Resume = () => {
 
   const experience = [
     {
-      role: "Salesforce Developer",
+      role: "Software Engineer",
       company: "Accenture",
       period: "2023 - Present",
       location: "Indore/Pune, India",
@@ -26,7 +26,7 @@ const Resume = () => {
       ],
     },
     {
-      role: "Junior Salesforce Developer",
+      role: "Associate Software Engineer",
       company: "Accenture",
       period: "2021 - 2023",
       location: "Bangalore, India",
