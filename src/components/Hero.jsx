@@ -1,19 +1,19 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
-import Frame3D from './Frame3D';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
+import Frame3D from "./Frame3D";
 
 const Hero = () => {
   const { isDark } = useTheme();
-  const profileImage = 'https://miro.medium.com/v2/resize:fit:2400/1*b3kIWsMkDeWVw6YjgOzm3w.jpeg';
+  const profileImage = "https://postimg.cc/YhGvtRqs";
 
   return (
     <section
       id="home"
       className={`min-h-screen flex items-center ${
         isDark
-          ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900'
-          : 'bg-gradient-to-br from-gray-50 via-white to-gray-100'
+          ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"
+          : "bg-gradient-to-br from-gray-50 via-white to-gray-100"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="order-1 lg:order-2">
             <h1
               className={`text-5xl md:text-6xl font-bold ${
-                isDark ? 'text-white' : 'text-gray-900'
+                isDark ? "text-white" : "text-gray-900"
               }`}
             >
               Samyak Kala
@@ -36,7 +36,7 @@ const Hero = () => {
             </h1>
             <p
               className={`text-xl ${
-                isDark ? 'text-gray-300' : 'text-gray-600'
+                isDark ? "text-gray-300" : "text-gray-600"
               } mb-8 mt-4`}
             >
               Transforming concepts into advanced Salesforce solutions and
