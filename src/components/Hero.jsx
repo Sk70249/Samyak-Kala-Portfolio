@@ -5,7 +5,7 @@ import Frame3D from "./Frame3D";
 
 const Hero = () => {
   const { isDark } = useTheme();
-  const profileImage = "https://postimg.cc/YhGvtRqs";
+  const profileImage = "https://i.postimg.cc/65znL1st/Untitled-design-13.png";
 
   return (
     <section
