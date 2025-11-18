@@ -6,7 +6,7 @@ import Frame3D from "./Frame3D";
 const Hero = () => {
   const { isDark } = useTheme();
   const profileImage =
-    "https://miro.medium.com/v2/resize:fit:2400/1*b3kIWsMkDeWVw6YjgOzm3w.jpeg";
+    "https://i.ibb.co/G343RRjk/Gemini-Generated-Image-dhcaywdhcaywdhca.png";
 
   return (
     <section
